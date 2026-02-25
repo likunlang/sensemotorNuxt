@@ -135,7 +135,7 @@
 <script lang="ts" setup>
 import { useProductStore } from '~/stores/products'
 
-const { $i18n } = useNuxtApp()
+const { t } = useI18n()
 const route = useRoute()
 const config = useRuntimeConfig()
 const cdnUrl = config.public.cdnUrl
@@ -148,22 +148,22 @@ const isScrollTop = ref(true)
 const navItems = computed(() => [
   {
     key: 'home',
-    label: $i18n.t('index.routes.home'),
+    label: t('index.routes.home'),
     path: '/',
   },
   {
     key: 'why_electric',
-    label: $i18n.t('index.routes.why'),
+    label: t('index.routes.why'),
     path: '/why_electric',
   },
   {
     key: 'products',
-    label: $i18n.t('index.routes.products'),
+    label: t('index.routes.products'),
     children: productStore.menuItems,
   },
   {
     key: 'aboutus',
-    label: $i18n.t('index.routes.about'),
+    label: t('index.routes.about'),
     path: '/aboutus',
   },
 ])

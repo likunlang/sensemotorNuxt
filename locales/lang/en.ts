@@ -1,5 +1,4 @@
-// locales/lang/en.ts
-export default {
+const en = {
   index: {
     routes: {
       home: 'Home',
@@ -20,3 +19,4 @@ export default {
     },
   },
 }
+export default en

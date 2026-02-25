@@ -1,5 +1,4 @@
-// locales/lang/zh_CN.ts
-export default {
+const zh = {
   index: {
     routes: {
       home: '首页',
@@ -20,3 +19,4 @@ export default {
     },
   },
 }
+export default zh
