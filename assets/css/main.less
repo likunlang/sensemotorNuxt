@@ -1,0 +1,109 @@
+/* assets/css/main.less */
+/* 从原项目 src/assets/css/main.less 迁移的全局样式 */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: @text-color;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 通用容器 */
+.sense_container {
+  width: 100%;
+  max-width: @container-max-width;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  @media screen and (max-width: @breakpoint-md) {
+    padding: 0 20px;
+  }
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* 子页面包装 */
+.childpage_wrapper {
+  padding-top: @header-height;
+  min-height: 100vh;
+}
+
+/* 滚动动画类（初始状态，被 ScrollReveal 控制） */
+.home_add {
+  visibility: visible;
+}
+
+/* SVG Icon */
+.sense-icon {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  fill: currentColor;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+/* 图片懒加载过渡 */
+img[lazy='loading'] {
+  filter: blur(4px);
+  transition: filter 0.3s;
+}
+img[lazy='loaded'] {
+  filter: none;
+}
+
+/* 新闻内容样式 */
+.news_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+
+  @media (max-width: @breakpoint-md) {
+    padding: 20px;
+  }
+}
+
+.news_wrapper {
+  background: #fff;
+}
+
+/* Ant Design Vue 全局覆盖 */
+.ant-btn-primary {
+  border-radius: 6px !important;
+}
+
+:root {
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+  --font-open-sans: 'Open Sans', sans-serif;
+}
+
+/* 响应式工具类 */
+@media (max-width: @breakpoint-md) {
+  .md\:hidden { display: none !important; }
+  .md\:block { display: block !important; }
+}
+
+/* 深色抽屉（移动端菜单） */
+:deep(.menu-drawer) {
+  .ant-drawer-content { background: #333; }
+  .ant-drawer-body { padding: 0; }
+}
+.sense-icon {
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  display: inline-block;
+}

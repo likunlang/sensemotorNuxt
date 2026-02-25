@@ -1,0 +1,137 @@
+@font-face {
+    font-family: __Space_Grotesk_dd5b2f;
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url(/resource/font/Space_Grotesk1.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: __Space_Grotesk_dd5b2f;
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url(/resource/font/Space_Grotesk2.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: __Space_Grotesk_dd5b2f;
+    font-style: normal;
+    font-weight: 300 700;
+    font-display: swap;
+    src: url(/resource/font/Space_Grotesk3.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: __Space_Grotesk_Fallback_dd5b2f;
+  src: local("Arial");
+  ascent-override:89.71%;
+  descent-override:26.62%;
+  line-gap-override:0.00%;
+  size-adjust:109.69%
+}
+
+
+@font-face {
+    font-family: __Open_Sans_2fad4c;
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(/resource/font/d6fc113833db48fe-s.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: __Open_Sans_2fad4c;
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(/resource/font/e1df014bb05b8510-s.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: __Open_Sans_2fad4c;
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(/resource/font/13a314e63820922b-s.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: __Open_Sans_2fad4c;
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(/resource/font/04c24f78ad5a47d8-s.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: __Open_Sans_2fad4c;
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(/resource/font/c1a1fe1e2bf9b2ee-s.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: __Open_Sans_2fad4c;
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(/resource/font/9e769f40faa52555-s.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: __Open_Sans_2fad4c;
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(/resource/font/37da3febcafd463e-s.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: __Open_Sans_2fad4c;
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(/resource/font/51f6eedf9be77cd7-s.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: __Open_Sans_2fad4c;
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(/resource/font/403511e41efd5e81-s.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: __Open_Sans_2fad4c;
+    font-style: normal;
+    font-weight: 300 800;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(/resource/font/e807dee2426166ad-s.p.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: __Open_Sans_Fallback_2fad4c;
+  src: local("Arial");
+  ascent-override:101.65%;
+  descent-override:27.86%;
+  line-gap-override:0.00%;
+  size-adjust:105.15%
+}
+
+:root {
+  --font-space-grotesk: "__Space_Grotesk_dd5b2f","__Space_Grotesk_Fallback_dd5b2f";
+  --font-open-sans: "__Open_Sans_2fad4c","__Open_Sans_Fallback_2fad4c";
+}
