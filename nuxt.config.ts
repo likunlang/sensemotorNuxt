@@ -1,6 +1,6 @@
 // nuxt.config.ts
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   // ✅ SSR 开启（核心SEO配置）
   ssr: true,
@@ -70,10 +70,17 @@ export default defineNuxtConfig({
           additionalData: `@import "@/assets/css/var.less";`,
         },
       },
+      devSourcemap: true,
+    },
+    server: {
+      fs: {
+        strict: false,
+      },
+      hmr: false, // 暂时禁用 HMR 以减少开发环境请求次数，解决 429 错误
     },
     // 优化 ant-design-vue SSR
     optimizeDeps: {
-      include: ['ant-design-vue', 'dayjs'],
+      include: ['ant-design-vue', 'dayjs', 'swiper', 'swiper/vue', 'swiper/modules'],
     },
   },
 
@@ -99,6 +106,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+        { rel: 'shortcut icon', href: '/favicon.png' },
         {
           rel: 'preconnect',
           href: 'https://assets.senseautos.com',

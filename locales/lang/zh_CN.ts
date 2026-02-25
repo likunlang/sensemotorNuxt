@@ -17,6 +17,12 @@ const zh = {
       viewDetails: '查看详情',
       learnMore: '了解更多',
     },
+    footer: {
+      contactUs: '联系我们',
+      address: '地址',
+      followUs: '关注我们',
+      rights: '版权所有。',
+    },
   },
 }
 export default zh

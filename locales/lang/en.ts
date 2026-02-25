@@ -17,6 +17,12 @@ const en = {
       viewDetails: 'View Details',
       learnMore: 'Learn More',
     },
+    footer: {
+      contactUs: 'Contact Us',
+      address: 'Address',
+      followUs: 'Follow Us',
+      rights: 'All Rights Reserved.',
+    },
   },
 }
 export default en

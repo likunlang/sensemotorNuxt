@@ -59,11 +59,19 @@ const swiperEl = ref<HTMLElement | null>(null)
 onMounted(async () => {
   if (!swiperEl.value) return
   const { Swiper } = await import('swiper')
-  const { Navigation, Pagination, A11y } = await import('swiper/modules')
+  const { Navigation, Pagination, Autoplay, A11y } = await import('swiper/modules')
   await import('swiper/css')
+  await import('swiper/css/navigation')
+  await import('swiper/css/pagination')
+  await import('swiper/css/autoplay')
 
   new Swiper(swiperEl.value, {
-    modules: [Navigation, Pagination, A11y],
+    modules: [Navigation, Pagination, Autoplay, A11y],
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    loop: true,
     slidesPerView: 1,
     spaceBetween: 24,
     navigation: {

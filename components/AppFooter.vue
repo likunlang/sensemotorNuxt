@@ -30,7 +30,7 @@
 
         <!-- Contact -->
         <div class="section contact-section">
-          <div class="footer-section-title">Contact&nbsp;&nbsp;us</div>
+          <div class="footer-section-title">{{ $t('index.footer.contactUs') }}</div>
           <address class="footer-address">
             <div class="contact-item">
               <svg class="sense-icon" aria-hidden="true">
@@ -70,7 +70,7 @@
 
       <!-- Copyright -->
       <div class="footer-bottom">
-        <p>© {{ new Date().getFullYear() }} SenseMotor. All rights reserved.</p>
+        <p>© {{ new Date().getFullYear() }} SenseMotor. {{ $t('index.footer.rights') }}</p>
         <div class="footer-bottom-links">
           <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
           <NuxtLink to="/terms">Terms of Use</NuxtLink>

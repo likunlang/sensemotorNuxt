@@ -73,7 +73,7 @@
 
 <script lang="ts" setup>
 import { getNewsListData, getRandomItems } from '~/utils/newsData'
-import listDataDetail from '~/utils/newsDetail'
+import getNewsDetailData from '~/utils/newsDetail'
 
 const route = useRoute()
 const config = useRuntimeConfig()
@@ -87,7 +87,7 @@ const newsListData = getNewsListData();
 const { data: newsItem, pending } = await useAsyncData(
   `news-${articleId.value}`,
   () => {
-    const detail = listDataDetail.find((i) => i.id === articleId.value)
+    const detail = getNewsDetailData().find((i) => i.id === articleId.value)
     if (!detail) return null
     return Promise.resolve(detail)
   },

@@ -30,6 +30,7 @@
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^22.10.2",
     "less": "^4.2.1",
+    "less-loader": "^12.3.1",
     "nuxt": "^3.14.1592",
     "typescript": "^5.7.2",
     "vue-tsc": "^2.1.10"
